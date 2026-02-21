@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "org.gatu.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"EntityStatusMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

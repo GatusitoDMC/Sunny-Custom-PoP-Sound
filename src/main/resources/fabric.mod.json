@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "pop-sound",
+	"version": "${version}",
+	"name": "PoP Sound",
+	"description": "cambia el sonido del pop de minecraft :v",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/pop-sound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "org.gatu.PoPSound",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"pop-sound.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
